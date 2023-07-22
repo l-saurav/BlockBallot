@@ -2,5 +2,5 @@ const Election = artifacts.require("Election.sol");
 
 module.exports = async function(deployer) {
    
-  deployer.deploy(Election,"sujan","damak","0xc27c45c5356897eD427639bD3e4cF6d33DB9aFA8");
+  deployer.deploy(Election,"Ganache 1","Kathmandu","0x225e9CFb1aa065A320D3C7364364703bD42c247F");
 };
