@@ -41,8 +41,8 @@ contract Election{
     string Electionname;
     string placeofElection;
     address public admin;
-    constructor(string memory name,string memory place,address createraddress) public {
-        admin =createraddress;
+    constructor(string memory name,string memory place,address creator) public {
+        admin =creator;
         Electionname=name;
         placeofElection=place;
     }
@@ -202,5 +202,4 @@ contract Election{
           {
               return (candidatelist[winnerindex].name,candidatelist[winnerindex].party);
           }
- 
 }
